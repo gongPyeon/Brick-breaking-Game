@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "gameStartcss.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Gamelauncher</title>
+</head>
+
+<body>
+    <div id="INTRO">
+        <img src="src/img/ManjuMoving.gif" height="500px" width="500px">
+        <p>팝업 허용 후, Press F5<br><br></p>
+        <p id="LOGO">만쥬의 이중생활<br></p>
+        <p id = "info1">※ chrome을 사용할 경우, bgm은 chrome 소리 설정의 사이트 추가 ※</p>
+        <p id = "info2">※ 화면 크기 조정을 원할 경우, 디스플레이 속성의 배율을 조정 ※<br></p>
+        <p id="if3">Web Programming, Team Project, 만쥬의 이중생활, Spring 2023</p>
+        <p id="if3">Created by 이윤호, 이혜리, 편강, 황우진</p>
+    </div>
+    <script>
+        document.cookie = "C1=" + 0 + ";samesite=lax"
+        document.cookie = "C2=" + 0 + ";samesite=lax"
+        document.cookie = "C3=" + 0 + ";samesite=lax"
+        document.cookie = "LD=" + 0 + ";samesite=lax"
+        document.cookie = "CRT=" + 0 + ";samesite=lax"
+        document.cookie = "TOTAL=" + 0 + ";samesite=lax"
+        document.cookie = "check1=" + 0 + ";samesite=lax"
+        document.cookie = "check2=" + 0 + ";samesite=lax"
+        document.cookie = "check3=" + 0 + ";samesite=lax"
+        document.cookie = "check4=" + 0 + ";samesite=lax"
+        document.cookie = "check1Yes=" + 0 + ";samesite=lax"
+        document.cookie = "check2Yes=" + 0 + ";samesite=lax"
+        document.cookie = "check3Yes=" + 0 + ";samesite=lax"
+        document.cookie = "check4Yes=" + 0 + ";samesite=lax"
+        document.cookie = "curcur=" + 0 + ";samesite=lax"
+        document.cookie = "bgmlocal=" + 0 + ";samesite=lax"
+
+            // document.cookie = "ML=" + 0 + ";samesite=lax"
+        localStorage.setItem("C1", 0)
+        localStorage.setItem("C2", 0)
+        localStorage.setItem("C3", 0)
+        localStorage.setItem("LD", 160)
+        localStorage.setItem("CRT", 15)
+        localStorage.setItem("TOTAL", 0)
+        localStorage.setItem("check1", 0)
+        localStorage.setItem("check2", 0)
+        localStorage.setItem("check3", 0)
+        localStorage.setItem("check4", 0)
+        localStorage.setItem("check1Yes", 0)
+        localStorage.setItem("check2Yes", 0)
+        localStorage.setItem("check3Yes", 0)
+        localStorage.setItem("check4Yes", 0)
+        localStorage.setItem("curcur", 0)
+        localStorage.setItem("bgmlocal", 0)
+
+        const HEIGHT = 1000,
+            WIDTH = 1000
+        popupWindow = window.open("src/StartPage.html", "width=1000px", "height=1000px");
+    </script>
+</body>
+
+</html>
