@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<!--Startpagecss.css-->
+	<link rel = "stylesheet" href = "StartPagecss.css" type="text/css">
+	<!--jQuery-->
+	<script src = "https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!--StartPagejs.js-->
+	<script src = "StartPagejs.js"></script>
+</head>
+<body>
+	<canvas id="intro" width = "1000" height = "800"></canvas>
+	<div id = "title">
+		<p class = "text" id = "text1">만쥬의 이중생활</p>
+		<p class = "text" id = "text2">만쥬의 이중생활</p>
+		<p class = "text" id = "text3">만쥬의 이중생활</p>
+	</div>
+	<div id = "buttons">
+		<button id="explanation" onclick="location.href='explanation.html'">게임설명</button>
+		<button id="selectLevel" onclick="location.href='SelectLevel.html'">게임시작</button>
+	</div>
+	<!-- 오디오 코드-->
+	<audio id = "bgm" src = "bgm/Game.mp3" controls loop></audio>
+	<!-- 커서 코드-->
+	<div id = "cur" class = "cursor"></div>
+</body>	
+</html>

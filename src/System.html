@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<!--System.css-->
+	<link rel = "stylesheet" href = "Systemcss.css" type="text/css">
+	<!--jQuery-->
+	<script src = "https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!--Systemjs.js-->
+	<script src = "Systemjs.js"></script>
+</head>
+<body>
+	<div id = "content">
+
+		<img src = "img/SelectBackground.png" width = "1000" height ="1000">
+		<div id = "text"><h1> 환 경 설 정</h1></div>
+		<div id ="UserChange"></div>
+
+		<button class = "name" id = "name1"><img src = "img/cursorExample.png" width = "210" height = "250"><p>커서 설정</p></button>
+		<div id="white"></div>
+		<button class = "name" id = "name2"><img src = "img/music.png" width = "210" height = "250"><p>소리 설정</p></button>
+
+		<img id = "cur1" src = "img/cursorExample.png">
+		<img id = "cur2" src = "img/cursorExample2.png">
+		<img id = "sound1" src = "img/soundon.png">
+		<img id = "sound2" src = "img/soundoff.png">
+		<div class = "change"></div>
+
+		<!-- 오디오 코드-->
+		<audio id = "bgm" src = "bgm/Game.mp3" controls loop></audio>
+		<!-- 커서 코드-->
+		<div id = "cur" class = "cursor"></div>
+
+		
+		<button class = "storeandback"id="back" onclick="location.href='SelectLevel.html'">뒤로</button>
+		
+	</div>
+
+
+</body>	
+</html>

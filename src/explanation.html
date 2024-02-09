@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<!--explanationcss.css-->
+	<link rel = "stylesheet" href = "explanationcss.css" type="text/css">
+	<!--jQuery-->
+	<script src = "https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!--explanationjs.js-->
+	<script src = "explanationjs.js"></script>
+</head>
+<body>
+	<div id = "content">
+
+		<img src = "img/SelectBackground.png" width = "1000" height ="1000">
+		<!--<img id = "s" src = "img/paper.png" width ="1000" height = "800">-->
+
+			<img id = "real_contents" src = "img/yang.png" width = "600" height ="600">
+			<img id = "title" src = "img/yang2.png" width = "500" height  = "100">
+			<h3> 게임설명 & 스토리 </h3>
+				<div class = "name" id = "name_first">스토리</div>
+				<div id = "help2"> <p> 넘어가려면 <br>양쪽 ◀,▶ 버튼을<p><br> 클릭하세요!</div>
+				<div id ="story">
+					<img src = "img/scene1.png"><!--이미지 바뀌기-->
+					<div id = "texts">
+						
+						<img src = "img/scene1_1.png">
+				
+					</div>
+					<div id = "storybuttons">
+						<button id="back" onclick="pre()">◀</button>
+						<button id="next" onclick="post()">▶</button>
+					</div>
+				</div>
+			
+
+				
+				<div id = "help"> <게임방법> <br><br> 메인게임<br> 서브게임<br> 상점<br></div>
+
+				<div id = "howbuttons">
+					<button class = "circle" id="first">메인 게임</button>
+					<button class = "circle" id="second">서브 게임</button>
+					<button class = "circle" id="third">상점</button>
+				
+				</div>
+				
+					<div id = "init" ><div class = "rules" id = "one"></div></div>
+					<button id = "close">x</button>
+					<button id = "initexplainbutton_ok">확인</button>
+					<button id = "initexplainbutton_ok2">확인</button>
+					<button id = "initexplainbutton_space">Space</button>
+					<img class = "c" id="cr1" src = "img/Crystal1.png" width = "60" height = "60">
+					<img class = "c" id="cr2" src = "img/Crystal2.png" width = "60" height = "60">
+					<img class = "c" id="cr3" src = "img/Crystal3.png" width = "60" height = "60">
+			
+
+				<button id = "gotomain" onclick="location.href='SelectLevel.html'">게임 시작</button>
+
+			</img>
+
+		</img>
+		<!-- 오디오 코드-->
+		<audio id = "bgm" src = "bgm/Game.mp3" controls loop></audio>
+		<!-- 커서 코드-->
+		<div id = "cur" class = "cursor"></div>
+
+	</div>
+
+
+</body>	
+</html>

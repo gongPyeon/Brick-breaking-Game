@@ -1,0 +1,296 @@
+@font-face {
+    font-family: 'NeoDunggeunmoPro-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/NeoDunggeunmoPro-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+  overflow: hidden;
+}
+* {
+  font-family: 'NeoDunggeunmoPro-Regular';
+  margin: 0; 
+  padding: 0;
+}
+.cursor{
+    display : none;
+    width : 20px;
+    height : 20px;
+    background-color: yellow;
+    border-radius: 10px;
+    position: absolute;
+    left : 0;
+    top : 0;
+    z-index: 2;
+    transform: background-color .1s, border-color .1s, border-radius .2s;
+}
+header {
+  height: 80px;
+  overflow: hidden;
+  position: relative;
+  background-color: #36265a;
+}
+
+#back-button { 
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  height: 60px;
+  width: 80px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 15px;
+  color: white;
+  border-radius: 35px 35px;
+  border:1px solid white;
+  background-color: #2D2C2A;
+}
+#back-button:hover {
+  background-color: #6C7455;
+  color: black;
+  font-size: 20px
+}
+#goUP-button {
+  position: absolute;
+  left: 100px;
+  top: 10px;
+  height: 60px;
+  width: 80px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 15px;
+  color: white;
+  border-radius: 35px 35px;
+  border:1px solid white;
+  background-color: #2D2C2A;
+}
+#goUP-button:hover {
+  background-color: #6C7455;
+  color: black;
+  font-size: 20px
+}
+#reTry-button {
+  position: absolute;
+  left: 190px;
+  top: 10px;
+  height: 60px;
+  width: 80px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 15px;
+  color: white;
+  border-radius: 35px 35px;
+  border:1px solid white;
+  background-color: #2D2C2A;
+}
+#reTry-button:hover {
+  background-color: #6C7455;
+  color: black;
+  font-size: 20px
+}
+#select-button {
+  position: absolute;
+  left: 280px;
+  top: 10px;
+  height: 60px;
+  width: 80px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 15px;
+  color: white;
+  border-radius: 35px 35px;
+  border:1px solid white;
+  background-color: #2D2C2A;
+}
+#select-button:hover {
+  background-color: #6C7455;
+  color: black;
+  font-size: 20px
+}
+#check-cry {
+  position: absolute;
+  overflow: hidden;
+  right: 10px;
+  top: 10px;
+  height: 60px;
+  width: 100px;
+  text-align: center;
+  line-height: 60px;
+  background-color: #2B2A28;
+  border-radius: 25px 25px;
+  border:1px solid white;
+}
+#check-lad {
+  position: absolute;
+  overflow: hidden;
+  right: 130px;
+  top: 10px;
+  height: 60px;
+  width: 120px;
+  text-align: center;
+  line-height: 60px;
+  background-color: #2B2A28;
+  border-radius: 25px 25px;
+  border:1px solid white;
+}
+#check-total {
+  position: absolute;
+  overflow: hidden;
+  right: 270px;
+  top: 10px;
+  height: 60px;
+  width: 100px;
+  text-align: center;
+  line-height: 60px;
+  background-color: #2B2A28;
+  border-radius: 25px 25px;
+  border:1px solid white;
+}
+.mini {
+  position: absolute;
+  left: 5px;
+}
+.count {
+  position: absolute;
+  right: 20px;
+  color: white;
+  font-size: 20px;
+}
+
+#playing-zone {
+  position: relative;
+  height: 665px;
+  background-image: url('img/main1.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+/*#wall {
+  position: absolute;
+  height: 665px;
+  width: 200px;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}*/
+
+#moveIMG {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+}
+#moveIMG1 {
+  position: absolute;
+  left: 0;
+  bottom: 70px;
+  display: none;
+  z-index: 2;
+}
+#moveIMG2 {
+  position: absolute;
+  left: 0;
+  bottom: 140px;
+  display: none;
+  z-index: 2;
+}
+#moveIMG3 {
+  position: absolute;
+  left: 0;
+  bottom: 210px;
+  display: none;
+  z-index: 2;
+}
+#moveIMG4 {
+  position: absolute;
+  left: 0;
+  bottom: 280px;
+  display: none;
+  z-index: 2;
+}
+#moveIMG5 {
+  position: absolute;
+  left: 0;
+  bottom: 350px;
+  display: none;
+  z-index: 2;
+}
+#moveIMG6 {
+  position: absolute;
+  left: 0;
+  bottom: 420px;
+  display: none;
+  z-index: 2;
+}
+#moveIMG7 {
+  position: absolute;
+  left: 0;
+  bottom: 490px;
+  display: none;
+  z-index: 2;
+}
+#moveIMG8 {
+  position: absolute;
+  left: 0;
+  bottom: 560px;
+  display: none;
+  z-index: 2;
+}
+#hiddenManju {
+  position: absolute;
+  left: 700px;
+  bottom: 0;
+  display: none;
+  z-index: 3;
+}
+
+/*팝업창*/
+
+.pop {
+  display : none;
+  position: absolute;
+  border-radius: 10px;
+  background-color:white;
+  width : 400px;
+  height: 200px;
+  z-index: 6;
+}
+
+.pDetail{
+  position: absolute;
+  border-radius: 10px;
+  background-color:black;
+  width : 380px;
+  height: 180px;
+  margin: auto;
+  left: 10px;
+  top: 10px;
+  z-index: 7;
+}
+
+.pDetail p{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 20px;
+    color : yellow;  
+    z-index: 9;
+}
+
+#check1-NO, #check2-NO, #check3-NO, #check1-SELECT, #check3-NONE, #check3-AUTO{
+  display : none;
+  z-index: 9;
+}
+
+#check1-YES, #check2-YES, #check3-YES{
+  display : none;
+  z-index: 9;
+}
+
+.checkBTN {
+  position: absolute;
+  height: 20px;
+  width: 60px;
+  left: 160px;
+  bottom: 10px;
+  text-align: center;
+  z-index: 10; 
+}

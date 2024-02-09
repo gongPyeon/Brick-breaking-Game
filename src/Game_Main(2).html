@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel = "stylesheet" href = "Game_Maincss(2).css" type="text/css">
+	<script src = "https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src = "Game_Mainjs(2).js"></script>
+</head>
+<body>
+	<header>
+		<button id="back-button" onclick="goStore()">상점</button>
+		<button id="goUP-button" onclick="finalCheck()">확인</button>
+		<button id="reTry-button" onclick="resetMG()">재시작</button>
+		<button id="select-button" onclick="goSelect()">난이도</button>
+		<div id="check-cry">
+			<img class="mini" src="img/Crystal2.png" width="50px" height="60px">
+			<div class="count" id="cry-count" width="50px" height="60px">0</div>
+		</div>
+		<div id="check-lad">
+			<img class="mini" src="img/BridgeBasic.png" width="50px" height="60px">
+			<div class="count" id="lad-count" width="50px" height="60px">0</div>
+		</div>
+		<div id="check-total">
+			<img class="mini" src="img/Crystal22.gif" width="50px" height="60px">
+			<div class="count" id="total-count" width="50px" height="60px">0</div>
+		</div>
+	</header>
+
+	<div id="playing-zone">
+		<div class="pop" id="check1">
+			<div class="pDetail" id="check1-YES">
+				<p> 상점으로 이동 중... </p>
+				<button class="checkBTN" onclick="location.href='MGtoStore.html'">OK</button>
+			</div>
+			<div class="pDetail" id="check1-SELECT">
+				<p> 난이도 선택 화면으로 이동 중... </p>
+				<button class="checkBTN" onclick="location.href='SelectLevel.html'">OK</button>
+			</div>
+			<div class="pDetail" id="check1-NO">
+				<p> 사다리를 모두 쌓고 </p>
+				<p> '확인'을 누르셔야 합니다! </p>
+				<button class="checkBTN" onclick="displayevent();">OK</button>
+			</div>
+		</div>
+
+		<div class="pop" id="check2">
+			<div class = "pDetail" id="check2-YES">
+				<p> 사다리 만들기 성공 !! </p>
+				<button class="checkBTN" onclick="displayevent();">OK</button>
+			</div>
+			<div class = "pDetail" id="check2-NO">
+				<p> 사다리 만들기 실패... </p>
+				<button class="checkBTN" onclick="displayevent();">OK</button>
+			</div>
+		</div>
+
+		<div class="pop" id="check3">
+			<div class = "pDetail" id="check3-YES">
+				<p> 곧 게임이 다시 시작됩니다 !! </p>
+				<!--<button class="checkBTN" onclick="displayevent();">OK</button>-->
+			</div>
+			<div class = "pDetail" id="check3-NO">
+				<p> 사다리가 부족해요... </p>
+				<button class="checkBTN" onclick="displayevent();">OK</button>
+			</div>
+			<div class = "pDetail" id="check3-NONE">
+				<p> 사다리를 더 모아야 합니다... </p>
+				<button class="checkBTN" onclick="location.href='SelectLevel.html';">OK</button>
+			</div>
+			<div class = "pDetail" id="check3-AUTO">
+				<p> Stage 2 성공!! Stage 3으로 넘어갑니다! </p>
+				<button class="checkBTN" onclick="location.href='Game_Sub.html?2';">OK</button>
+			</div>
+		</div>
+
+		<img id="moveIMG" src="img/BridgeBasic.png" width="100px" height="100px">
+		<img class="IMG" id="moveIMG1" src="img/BridgeBasic.png" width="100px" height="100px">
+		<img class="IMG" id="moveIMG2" src="img/BridgeBasic.png" width="100px" height="100px">
+		<img class="IMG" id="moveIMG3" src="img/BridgeBasic.png" width="100px" height="100px">
+		<img class="IMG" id="moveIMG4" src="img/BridgeBasic.png" width="100px" height="100px">
+		<img class="IMG" id="moveIMG5" src="img/BridgeBasic.png" width="100px" height="100px">
+		<img class="IMG" id="moveIMG6" src="img/BridgeBasic.png" width="100px" height="100px">
+		<img class="IMG" id="moveIMG7" src="img/BridgeBasic.png" width="100px" height="100px">
+		<img class="IMG" id="moveIMG8" src="img/BridgeBasic.png" width="100px" height="100px">
+		<img class="IMG" id="hiddenManju" src="img/ManjuBasic2.png" width="100px" height="100px">
+		<!--<img id="wall" src="img/Wall3.png">-->
+	</div>
+	<div id = "cur" class = "cursor"></div>
+</body>
+</html>

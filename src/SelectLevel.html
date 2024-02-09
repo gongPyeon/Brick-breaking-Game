@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<!--SelectLevelcss.css-->
+	<link rel = "stylesheet" href = "SelectLevelcss.css" type="text/css">
+	<!--jQuery-->
+	<script src = "https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!--SelectLeveljs.js-->
+	<script src = "SelectLeveljs.js"></script>
+</head>
+<body>
+	<div id= "content">
+		<img id= "background"src= "img/SelectBackground.png" width="1000" height = "1000">
+		<!-- <img id= "background2"src= "img/SelectLevel.png" width="800" height = "800"> -->
+		<!--표지판-->
+		<!-- <img id="title" src= "img/SelectLeveltitle.png" width = "450" height = "160"> -->
+		<p id = "titletext"> Select Level </p>
+		<div id ="p1">Level1</div>
+		<img class = "stage" id ="stage1" src ="img/StageName.png" width = "220" height = "100"></img>
+		<div id= "p2">Level2</div>
+		<img class = "stage" id ="stage2" src ="img/StageName.png" width = "220" height = "100"></img>
+		<div id= "p3">Level3</div>
+		<img class = "stage" id ="stage3" src ="img/StageName.png" width = "220" height = "100"></img>
+		<!--click시 나타나는 팝업창-->
+		<div class="popup" id = "s1">
+			<div class = "popup2" id ="s11">
+				<p> Level1을 선택하시겠습니까? </p>
+				<button class= "ynbuttons" id="yes"  onclick="location.href='Game_Sub.html?0'">YES</button> <!--파일이름 추가 해야할 부분-->
+				<button class="ynbuttons" id="no" onclick="displayevent();">NO</button>
+			</div>
+		</div>
+		<div class="popup" id = "s2">
+			<div class = "popup2" id ="s22">
+				<p> Level2을 선택하시겠습니까? </p>
+				<button class="ynbuttons" id="yes" onclick="location.href='Game_Sub.html?1'">YES</button> <!--파일이름 추가 해야할 부분-->
+				<button class="ynbuttons"id="no" onclick="displayevent();">NO</button>
+			</div>
+		</div>
+		<div class="popup" id = "s3">
+			<div class = "popup2" id ="s33">
+				<p> Level3을 선택하시겠습니까? </p>
+				<button class="ynbuttons"id="yes"  onclick="location.href='Game_Sub.html?2'">YES</button> <!--파일이름 추가 해야할 부분-->
+				<button class="ynbuttons"id="no" onclick="displayevent();">NO</button>
+			</div>
+		</div>
+		<!--문-->
+			<div class = "level" id = "level1">
+				<img src = "img/MainStage1.png">
+			</div>
+			<div class = "level" id = "level2">
+				<img src = "img/MainStage2.png">
+			</div>
+			<div class = "level" id = "level3">
+				<img src = "img/MainStage3.png">
+			</div>
+			<div id = "buttons">
+				<img id = "system" onclick="location.href='System.html'" src = "img/topni.png">
+				<button class = "storeandback" id="store" onclick="location.href='Store.html'">상점</button>
+				<button class = "storeandback"id="back" onclick="location.href='StartPage.html'">뒤로</button>
+			</div>
+
+			<!-- 오디오 코드-->
+			<audio id = "bgm" src = "bgm/Game.mp3" controls loop></audio>
+			<!-- 커서 코드-->
+			<div id = "cur" class = "cursor"></div>
+		</img>
+	</div>
+</body>	
+</html>
